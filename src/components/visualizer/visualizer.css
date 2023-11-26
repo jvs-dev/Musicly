@@ -1,0 +1,35 @@
+.visualizerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__audioTime {
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 500;
+    display: none;
+    margin-top: 10px;
+}
+
+.main__div--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: solid 1px var(--gray);
+    background: var(--black);
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    box-shadow: 0px 0px 30px var(--gray);
+}
+
+.main__div--durationBar {
+    width: 170px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

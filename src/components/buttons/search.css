@@ -1,0 +1,9 @@
+.main__searchBtn {
+    position: absolute;
+    color: var(--white);
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    margin: 20px 0px 0px 20px;
+    cursor: pointer;
+}

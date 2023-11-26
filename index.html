@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musicly</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/components/titles/titles.css">
+  <link rel="stylesheet" href="src/components/controls/controls.css">
+  <link rel="stylesheet" href="src/components/menu/menu.css">
+  <link rel="stylesheet" href="src/components/visualizer/visualizer.css">
+  <link rel="stylesheet" href="src/components/devReference/devReference.css">
+  <link rel="stylesheet" href="src/components/loader/musicLoader.css">
+  <link rel="stylesheet" href="src/sections/initSearch.css">
+  <link rel="stylesheet" href="src/components/buttons/search.css">
+  <link rel="stylesheet" href="src/components/loaders/three-ball.css">
+  <link rel="stylesheet" href="src/components/buttons/spotfyLink.css">
+</head>
+
+<body>
+  <main id="main">
+    <section class="main__loading" id="loadingSection">
+      <div class="three-body">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+      </div>
+    </section>
+    <section class="main__searchSection" id="searchSection">
+      <h1 class="searchSection__h1">Search Music</h1>
+      <div class="searchSection__div">
+        <ion-icon name="search" class="searchSection__icon"></ion-icon>
+        <input type="text" class="searchSection__input" placeholder="Music name" id="initSearch">
+      </div>
+      <button type="button" class="searchSection__Btn" id="initContinueBtn">Continue</button>
+    </section>
+    <ion-icon name="menu-outline" class="main__menuBtn" id="openMenu"></ion-icon>
+    <ion-icon name="search" class="main__searchBtn" id="searchBtn"></ion-icon>
+    <div class="main__titles">
+      <h1 class="main__h1" id="MusicName">Music Name</h1>
+      <h2 class="main__h2" id="ArtistName">Artist Name</h2>
+    </div>
+    <div class="visualizerDiv">
+      <div class="main__div--durationBar" id="musicDuration">
+        <div class="main__div--container">
+          <div class="musicLoader"></div>
+          <audio src="" class="main__audio" id="audioTag" controls></audio>
+        </div>
+      </div>
+      <span class="main__audioTime" id="musicTime"> </span>
+    </div>
+    <div class="main__div--controls">
+      <button class="main__controlsBtn" id="backMusic"><ion-icon class="main__controlsIcon"
+          name="play-skip-back-outline"></ion-icon></button>
+      <button class="main__controlsBtn" id="musicPlayPause"><ion-icon class="main__controlsIcon"
+          name="play"></ion-icon></button>
+      <button class="main__controlsBtn" id="forwardMusic"><ion-icon class="main__controlsIcon"
+          name="play-skip-forward-outline"></ion-icon></button>
+    </div>
+    <a href="" class="main__spotfyLink" id="spotfyLink">Ver música<i class="bi bi-spotify"></i></a>
+    <a href="https://jvs-dev-portfolio.vercel.app" class="main__dev"><ion-icon class="main__devIcon" name="code-slash"></ion-icon>JVS-DEV</a>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="src/script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.main__menuBtn {
+    position: absolute;
+    color: var(--white);
+    top: 0;
+    right: 0;
+    font-size: 35px;
+    margin: 20px 20px 0px 0px;
+    cursor: pointer;
+}

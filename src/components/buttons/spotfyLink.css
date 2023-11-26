@@ -1,0 +1,14 @@
+.main__spotfyLink {
+    background: #191414;
+    border-radius: 15px;
+    color: #1DB954;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    font-weight: 500
+}
+
+.main__spotfyLink i {
+    margin-left: 10px;
+    font-size: 20px;
+}
