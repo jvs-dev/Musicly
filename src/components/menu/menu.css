@@ -7,3 +7,54 @@
     margin: 20px 20px 0px 0px;
     cursor: pointer;
 }
+
+.main__menuSection {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: var(--black);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    padding: 40px 20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menuSection__darkLight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 0px 0px 20px;
+    color: var(--white);
+    font-size: 28px;
+    cursor: pointer;
+}
+.menuSection__btn {
+    color: var(--white);
+    background: transparent;
+    text-decoration: none;
+    font-size: 22px;
+    border: 0px;
+    outline-style: 0px;
+    margin: 0px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.menuSection__btn:hover {
+    color: var(--black);
+    background: var(--white);
+}
+.menuSection__closeMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px 0px 0px;
+    color: var(--white);
+    font-size: 34px;
+    cursor: pointer;
+}

@@ -14,6 +14,33 @@ const MusicName = document.getElementById("MusicName")
 const ArtistName = document.getElementById("ArtistName")
 const loadingSection = document.getElementById("loadingSection")
 const spotfyLink = document.getElementById("spotfyLink")
+const openMenu = document.getElementById("openMenu")
+const menuSection = document.getElementById("menuSection")
+const closeMenu = document.getElementById("closeMenu")
+const darkLightBtn = document.getElementById("darkLightBtn")
+
+darkLightBtn.addEventListener("click", () => {
+    document.querySelector("body").classList.toggle("dark")
+    if (darkLightBtn.name == "sunny-outline") {
+        darkLightBtn.name = "moon-outline"
+    } else {
+        darkLightBtn.name = "sunny-outline"
+    }
+})
+
+openMenu.addEventListener("click", () => {
+    menuSection.style.display = "flex"
+    setTimeout(() => {
+        menuSection.style.opacity = "1"
+    }, 1);
+})
+
+closeMenu.addEventListener("click", () => {
+    menuSection.style.opacity = "0"
+    setTimeout(() => {
+        menuSection.style.display = "none"
+    }, 500);
+})
 
 function activeLoading() {
     loadingSection.style.display = "flex"
@@ -72,7 +99,7 @@ async function initApp(musicId) {
                 musicPlayPause.children[0].name = "play"
             }
             musicTime.textContent = `${`${Math.floor((audioTag.duration.toFixed(2) - audioTag.currentTime.toFixed(2)) / 60)}`.length == 1 ? `0${Math.floor((audioTag.duration.toFixed(2) - audioTag.currentTime.toFixed(2)) / 60)}` : `${Math.floor((audioTag.duration.toFixed(2) - audioTag.currentTime.toFixed(2)) / 60)}`}:${`${((audioTag.duration.toFixed(2) - audioTag.currentTime.toFixed(2)) % 60).toFixed(0)}`.length == 1 ? `0${((audioTag.duration.toFixed(2) - audioTag.currentTime.toFixed(2)) % 60).toFixed(0)}` : `${((audioTag.duration.toFixed(2) - audioTag.currentTime.toFixed(2)) % 60).toFixed(0)}`}`
-            musicDuration.style.background = `linear-gradient(180deg, #FF5B50 0%, var(--black) ${((audioTag.currentTime / audioTag.duration) * 100).toFixed(2)}%)`
+            musicDuration.style.background = `linear-gradient(180deg, var(--red) 0%, var(--black) ${((audioTag.currentTime / audioTag.duration) * 100).toFixed(2)}%)`
         }, 100);
         searchSection.style.display = "none"
         desactiveLoading()

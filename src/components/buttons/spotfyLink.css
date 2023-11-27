@@ -5,7 +5,9 @@
     text-decoration: none;
     padding: 8px 20px;
     margin-bottom: 20px;
-    font-weight: 500
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 .main__spotfyLink i {

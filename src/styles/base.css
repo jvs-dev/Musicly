@@ -5,6 +5,13 @@
     --black: #0E0E0E;
 }
 
+.dark {
+    --red: #f43d31;
+    --white: #0E0E0E;
+    --gray: #5A5757;
+    --black: #e2e2e2;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: var(--black);
